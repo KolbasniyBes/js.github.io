@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style5.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script type="javascript.js"> </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<p>Сумма трёх первых членов геометрической прогрессии ровняется 516, а первый член ровняется 12. Найдите знаменатель прогрессии.</p>
+<p id="answ1" class="hide"><span>b1 = 2; Bn + 1 = 2Bn; b2=4, b3=8, b4=16, b5=32, b6=64, b7=128, b8=256, b9=512, b10=1024 - да</span></p>
+<button id="btn1">Показать решение</button>
+<p id="answ2" class="hide"> <span> b10=1024 - да</span></p>
+<button id="btn2">Показать ответ</button>
+<input type="text" id="inputansw">
+<button id="subm">submit</button>
+
+<script>
+btn1.addEventListener("click",hideIt1);
+    btn2.addEventListener("click",showIt2);
+    function hideIt1(){
+        answ1.classList ="show";
+    }
+    function showIt2(){
+        answ2.classList ="show";
+    }
+    
+    subm.addEventListener("click", get);
+
+    function get() {
+        let inputText = inputansw.value;
+        let answer = 'b10=1024 - да';
+
+        if (inputText == answer) {
+            alert('Верно!');
+
+        } else {
+            alert('Не верно!');
+        }
+    }
+</script>
+
+<p>Найдите номер первого отрицательного члена последовательности y заданого формулой n-го члена y= 38-3n</p>
+<p id="Answ1" class="hide"><span>38-3n &lt; 0  -3n &lt; -38  3n &gt; 38  n &gt; 12 2/3  n = 13</span></p>
+<button id="Btn1">Показать решение</button>
+<p id="Answ2" class="hide"><span>n = 13</span></p>
+<button id="Btn2">Показать ответ</button>
+<input type="text" id="inputansw2">
+<button id="subm2">submit</button>
+
+<script>
+Btn1.addEventListener("click",HideIt1);
+    Btn2.addEventListener("click",ShowIt2);
+    function HideIt1(){
+        Answ1.classList = "show";
+    }
+    function ShowIt2(){
+        Answ2.classList ="show";
+    }
+    
+    subm2.addEventListener("click", get);
+    function get() {
+        let inputText = inputansw2.value;
+        let answer2 = 13;
+
+        if (inputText == answer2) {
+            alert('Верно!');
+
+        } else {
+            alert('Не верно!');
+        }             
+    }
+        
+    
+</script>
+
+<p>При каком-угодно натуральном n, сумму n первых членов кое-какой арифметической прогрессии можно обчислить за формулой Sn = 9n - 2n*n</p>
+<p id="aNsw1" class="hide"><span>a7 = S7 - S6  S7 = 9*7-2*49 = -35; S6 = 9*6-2*36 = -18  a7 = -35-(-18)</span></p>
+<button id="bTn1">Показать решение</button>
+<p id="aNsw2" class="hide"><span>a7 = -17</span></p>
+<button id="bTn2">Показать ответ</button>
+<input type="text" id="inputansw3">
+<button id="subm3">submit</button>
+
+<script>
+bTn1.addEventListener("click",hIdeIt1);
+    bTn2.addEventListener("click",sHowIt2);
+    function hIdeIt1(){
+        aNsw1.classList = "show";
+    }
+    function sHowIt2(){
+        aNsw2.classList = "show";
+    }
+
+    subm3.addEventListener("click", get);
+    function get() {
+        let inputText = inputansw3.value;
+        let answer3 = -17;
+
+        if (inputText == answer3) {
+            alert('Верно!');
+
+        } else {
+            alert('Не верно!');
+        }             
+    }
+</script>
+
+<p>Найдите образ круга (x+2)*(x+2)+(y-4)*(y-4)=4 при гомотетии с центром в начале координат и коэффициэнтом 2</p>
+<p id="anSw1" class="hide"><span>(x+2)*(x+2)+(y-4)*(y-4)=4 0(-2;4) R = 2 0(-2;4) == O1(-1;2)  R1=2*1/2=1  (x+1)*(x+1)+(y-2)*(y-2)=1</span></p>
+<button id="btN1">Показать решение</button>
+<p id="anSw2" class="hide"><span>(x+1)*(x+1)+(y-2)*(y-2)=1</span></p>
+<button id="btN2">Показать ответ</button>
+<input type="text" id="inputansw4">
+<button id="subm4">submit</button>
+
+<script>
+btN1.addEventListener("click",hiDeIt1);
+    btN2.addEventListener("click",shOwIt2);
+    function hiDeIt1(){
+        anSw1.classList = "show";
+    }
+    function shOwIt2(){
+        anSw2.classList = "show";
+    }
+    
+    subm4.addEventListener("click", get);
+    function get() {
+        let inputText = inputansw4.value;
+        let answer4 = 1;
+
+        if (inputText == answer4) {
+            alert('Верно!');
+
+        } else {
+            alert('Не верно!');
+        }             
+    }
+</script>
+
+<p>Чему равна сумма n первых парных натуральных чисел?</p>
+<p id="ansW1" class="hide"><span>Sn = (2A1 + d(n-1)):2 * n  Sn = (4+2*(n-1)):2 * n = (2*(2+n-1):2 * n = (n+1)-n </span></p>
+<button id="btn3">Показать решение</button>
+<p id="ansW2" class="hide"><span>(n+1)-n</span></p>
+<button id="btn4">Показать ответ</button>
+<input type="text" id="inputansw5">
+<button id="subm5">submit</button>
+
+<script>
+btn3.addEventListener("click",hidEIt1);
+    btn4.addEventListener("click",shoWIt2);
+    function hidEIt1(){
+        ansW1.classList = "show";
+    }
+    function shoWIt2(){
+        ansW2.classList = "show";
+    }
+
+    subm5.addEventListener("click", get);
+    function get() {
+        let inputText = inputansw5.value;
+        let answer5 = '(n+1)-n';
+
+        if (inputText == answer5) {
+            alert('Верно!');
+
+        } else {
+            alert('Не верно!');
+        }             
+    }
+</script>
+
+<p>Найдите сумму всех положительных членов арифметической прогрессии 8.4; 7.8; 7.2...</p>
+<p id="answ3" class="hide"> <span> d = -0,6  8.4-0.6*(n-1) &gt; 0  8.4-0.6n + 0.6 &gt; 0  -0.6n &gt; - 9  n &lt; 15 n = 14  S14 = (16.8 - 0.6 *(14-1)):2 * 14 = 63</span></p>
+<button id="Btn3">Показать решение</button>
+<p id="answ4" class="hide"><span>63</span></p>
+<button id="Btn4">Показать ответ</button>
+<input type="text" id="inputansw6">
+<button id="subm6">submit</button>
+
+<script>
+ Btn3.addEventListener("click",hideIt3);
+    Btn4.addEventListener("click",showIt4);
+    function hideIt3(){
+        answ3.classList = "show";
+    }
+    function showIt4(){
+        answ4.classList = "show";
+    }
+
+    subm6.addEventListener("click", get);
+    function get() {
+        let inputText = inputansw6.value;
+        let answer6 = 63;
+
+        if (inputText == answer6) {
+            alert('Верно!');
+
+        } else {
+            alert('Не верно!');
+        }             
+    }
+</script>
+
+<p> Найдите сто первый член последовательности a, если A1 = 0, A2 = 1, An+2 = An + 1 - An</p>
+<p id="Answ3" class="hide"><span>A1 = 0  A2 = 1  An + 2 = An+1-an  a3=1-1=0  a4=1-1=0  a5=0-1=-1  a6=-1-0=-1  a7=-1+1=0  a8=0+1=1  a9=1-0=1  a10=1-1=0  a101=-1  n a101=95</span></p>
+<button id="bTn3">Показать решение</button>
+<p id="Answ4" class="hide"><span>-1  95</span></p>
+<button id="bTn4">Показать ответ</button>
+<input type="text" id="inputansw7">
+<button id="subm7">submit</button>
+<script>
+   bTn3.addEventListener("click",HideIt3);
+    bTn4.addEventListener("click",ShowIt4);
+    function HideIt3(){
+        Answ3.classList = "show";
+    }
+    function ShowIt4(){
+        Answ4.classList = "show";
+    }
+
+    subm7.addEventListener("click", get);
+    function get() {
+        let inputText = inputansw7.value;
+        let answer7 = '-1 95';
+
+        if (inputText == answer7) {
+            alert('Верно!');
+
+        } else {
+            alert('Не верно!');
+        }             
+    }
+    
+    
+</script>
+   <p>Найдите пять первых членов последовательности, если B1 = 18  Bn+1 = -(bn:3)</p>
+   <p id="aNsw3" class="hide">b2=-6 b3=2 b4 = -2/3 b5= -2/9</p>
+   <button id="btN3">Показать решение</button>
+   <p id="aNsw4" class="hide">-6 -2/4 -2/9</p>
+   <button id="btN4">Показать ответ</button>
+   <input type="text" id="inputansw8">
+<button id="subm8">submit</button>
+<script>
+    btN3.addEventListener("click",hIdeIt3);
+    btN4.addEventListener("click",sHowIt4);
+    function hIdeIt3(){
+        aNsw3.classList = "show";
+    }
+    function sHowIt4(){
+        aNsw4.classList = "show";
+    }
+
+    subm8.addEventListener("click", get);
+    function get() {
+        let inputText = inputansw8.value;
+        let answer8 = -6 -2/4 -2/9;
+
+        if (inputText == answer8) {
+            alert('Верно!');
+
+        } else {
+            alert('Не верно!');
+        }             
+    }
+    
+</script>
+
+<p>Последовательность задано формулой n-го члена a = 7n + 2. Есть ли членом этой последовательности число 149? Если да, то укажите номер этого члена</div></p>
+<p id="answ5" class="hide">bn=16  bn=7n+2 16=7n+2  n=2</p>
+<button id="btn5">Показать решение</button>
+<p id="answ6" class="hide">2</p>
+<button id="btn6">Показать ответ</button>
+<input type="text" id="inputansw9">
+<button id="subm9">submit</button>
+
+<script>
+ btn5.addEventListener("click",hIdeIt5);
+    btn6.addEventListener("click",sHowIt6);
+    function hIdeIt5(){
+        answ5.classList = "show";
+    }
+    function sHowIt6(){
+        answ6.classList = "show";
+    }
+
+    subm9.addEventListener("click", get);
+    function get() {
+        let inputText = inputansw9.value;
+        let answer9 = 2;
+
+        if (inputText == answer9) {
+            alert('Верно!');
+
+        } else {
+            alert('Не верно!');
+        }             
+    }
+
+</script>
+<p>Найдите второй, седьмой и сотый члены последовательности B заданой формулой n-го члена Bn = n*n + 2n</p>
+<p id="answ7" class="hide">b2 = 2*2+2*2=8</p>
+<button id="btn7">Показать решение</button>
+<p id="answ8" class="hide">8</p>
+<button id="btn8">Показать ответ</button>
+<input type="text" id="inputansw10">
+<button id="subm10">submit</button>
+<script>
+btn7.addEventListener("click",hIdeIt7);
+    btn8.addEventListener("click",sHowIt8);
+    function hIdeIt7(){
+        answ7.classList = "show";
+    }
+    function sHowIt8(){
+        answ8.classList = "show";
+    }
+
+    subm10.addEventListener("click", get);
+    function get() {
+        let inputText = inputansw10.value;
+        let answer10 = 8;
+
+        if (inputText == answer10) {
+            alert('Верно!');
+
+        } else {
+            alert('Не верно!');
+        }             
+    }
+
+
+</script>
+</body>
+</html>
